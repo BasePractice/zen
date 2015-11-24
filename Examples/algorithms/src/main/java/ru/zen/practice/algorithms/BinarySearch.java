@@ -10,7 +10,7 @@ public class BinarySearch {
         int max = elements.length - 1;
         int position = 0;
         while (max > min) {
-            position = (min + max) / 2;
+            position = (min + max) >> 2;
             if (elements[position] == elementToFind) {
                 return position;
             }
